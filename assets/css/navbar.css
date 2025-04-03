@@ -1,0 +1,166 @@
+ /* General Styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    padding-top: 70px; /* Add space for fixed navbar */
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+a:hover {
+    color: navy;
+}
+
+/* Navbar */
+header {
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 2rem;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.action_btn {
+    background-color: blueviolet;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    display: inline-block;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.action_btn:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+.action_btn:active {
+    transform: scale(0.95);
+}
+
+/* Checkbox and label setup */
+#toggle_checkbox {
+    display: none;
+}
+
+.toggle_button {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+    color: black;
+}
+
+/* Dropdown Menu */
+.dropdown_menu {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: height 0.3s ease;
+}
+
+.dropdown {
+    padding: 10px 0;
+    width: 100%;
+}
+
+.dropdown li {
+    padding: 0.5rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Fixed action button in dropdown */
+.dropdown li:last-child {
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.dropdown li .action_btn {
+    background-color: blueviolet;
+    color: white;
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: calc(100% - 10rem);
+    margin: 0 5rem;
+    text-align: center;
+}
+
+.dropdown li .action_btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure text doesn't break in dropdown items */
+.dropdown li a {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .navbar .nav-links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .toggle_button {
+        display: block;
+    }
+    
+    /* Show dropdown when checkbox is checked */
+    #toggle_checkbox:checked ~ .dropdown_menu {
+        height: auto;
+        padding: 1rem 0;
+    }
+}
