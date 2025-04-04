@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Aphiwe S Msabala</title>
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="assets/css/navbar.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,20 +12,24 @@
     <body>
         <header>
             <input type="checkbox" id="toggle_checkbox">
-            
+
+            <!-- Logo -->
             <div class="navbar">
+              <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.jpg" alt="Aphiwe S Msabala Logo">
+                </a>
+            </div>
                
                 <nav>
                     <ul class="nav-links">
                         <li class="active"><a href="index.html" aria-current="page">Home</a></li>
-                        <li><a href="#">About Me</a></li>
+                        <li><a href="#AboutMe">About Me</a></li>
                         <li><a href="pages/Portfolio.html">Portfolio</a></li>
                         <li><a href="pages/Education.html">Education</a></li>
-                        <!-- <li><a href="pages/Events.html">Events</a></li> -->
-                        <!-- <li><a href="pages/AboutMe.html">Contact Me</a></li> -->
                     </ul>
                 </nav>
-                <a href="#" class="action_btn">Contact Me</a>
+                <a href="/pages/ContactMe.html" class="action_btn">Contact Me</a>
                 <label class="toggle_button" for="toggle_checkbox">
                     <i class="fa-solid fa-bars"></i>
                 </label>
@@ -35,12 +39,10 @@
             <div class="dropdown_menu">
                 <ul class="dropdown">
                     <li class="active"><a href="index.html" aria-current="page">Home</a></li>
-                    <li><a href="#">About Me</a></li>
+                    <li><a href="#AboutMe">About Me</a></li>
                     <li><a href="pages/Portfolio.html">Portfolio</a></li>
                     <li><a href="pages/Education.html">Education</a></li>
-                    <!-- <li><a href="pages/Events.html">Events</a></li> -->
-                    <!-- <li><a href="pages/AboutMe.html">Contact Me</a></li> -->
-                    <li><a href="#" class="action_btn">Contact Me</a></li>
+                    <li><a href="/pages/ContactMe.html" class="action_btn">Contact Me</a></li>
                 </ul>
             </div>
         </header>
@@ -67,7 +69,7 @@
         </main>
         <content>
 
-            <section class="about-me-section">
+            <section id="AboutMe" class="about-me-section">
                 <div class="about-me-container">
                   <div class="about-me-header">
                     <h2>About Me</h2>
@@ -137,7 +139,7 @@
             </div>
             
             <div class="language-card">
-              <img src="/assets/images/git-logo.png" alt="Git">
+              <img src="/assets/images/github-142-svgrepo-com.svg" alt="Git">
               <h4>Git</h4>
             </div>
           </div>
@@ -162,11 +164,10 @@
               <div class="contact-info">
                 <h3>Contact Me</h3>
                 <p>Email: aphiwe.msabala127@gmail.com</p>
-                <p>Phone: (123) 456-7890</p>
               </div>
               <div class="social-links">
                 <a href="https:www.linkedin.com/in/aphiwe-msabala" class="social-icon">LinkedIn</a>
-                <a href="#" class="social-icon">GitHub</a>
+                <a href="https://github.com/AphiweMsabs" class="social-icon">GitHub</a>
               </div>
               <div class="copyright">
                 <p>© 2025 Aphiwe S. All rights reserved.</p>

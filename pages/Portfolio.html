@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="stylesheet" href="/assets/css/Portfolio.css">
         <link rel="stylesheet" href="/assets/css/navbar.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
@@ -13,7 +14,13 @@
         <header>
             <input type="checkbox" id="toggle_checkbox">
             
+            <!-- Logo -->
             <div class="navbar">
+                <div class="logo">
+                  <a href="index.html">
+                      <img src="/assets/images/logo.jpg" alt="Aphiwe S Msabala Logo">
+                  </a>
+              </div>
                
                 <nav>
                     <ul class="nav-links">
@@ -21,11 +28,9 @@
                         <li><a href="/index.html">About Me</a></li>
                         <li class="active" ><a href="Portfolio.html">Portfolio</a></li>
                         <li><a href="Education.html">Education</a></li>
-                        <!-- <li><a href="Events.html">Events</a></li> -->
-                        <!-- <li><a href="pages/AboutMe.html">Contact Me</a></li> -->
                     </ul>
                 </nav>
-                <a href="#" class="action_btn">Contact Me</a>
+                <a href="/pages/ContactMe.html" class="action_btn">Contact Me</a>
                 <label class="toggle_button" for="toggle_checkbox">
                     <i class="fa-solid fa-bars"></i>
                 </label>
@@ -38,69 +43,83 @@
                     <li><a href="/index.html">About Me</a></li>
                     <li  class="active"><a href="Portfolio.html">Portfolio</a></li>
                     <li><a href="Education.html">Education</a></li>
-                    <!-- <li><a href="Events.html">Events</a></li> -->
-                    <!-- <li><a href="pages/AboutMe.html">Contact Me</a></li> -->
-                    <li><a href="#" class="action_btn">Contact Me</a></li>
+                    
+                    <li><a href="/pages/ContactMe.html" class="action_btn">Contact Me</a></li>
                 </ul>
             </div>
         </header>
-    <main>
-
-        <section class="portfolio">
-            <h1><a href="/assets/cv/Aphiwe_Msabala.pdf">Portfolio</a></h1>
-            <p></p>
+        <main>
+            <section class="portfolio">
+                <h1>Portfolio</h1>
+                <p>Welcome to my professional portfolio showcasing my skills and projects.</p>
+                <a href="/assets/cv/Aphiwe_Msabala.pdf" class="download-cv" download>
+                    <i class="fa-solid fa-download"></i> Download My CV
+                </a>
+            </section>
             
-        </section>
-        <section class="Experience">
-            <h2>Experience</h2>
-        </section>
-        <section class="Projects">
-            <h2>Projects</h2>
-            <div class="projects">
-                <div class="project">   
-                    <h3>Care Compass</h3>
-                    <p>Developed a python web application that acts as a information hub that raises awareness on where to
-                        locate essential services that can help people in need live a basic quality of life
-                        Used tools and frameworks such flask, firebase, github</p>
-                </div>
-                <div class="project">
-                    <h3>ByteSize</h3>
-                    <p>Developed a python web based application to improve Telkom Learn App, by making it a byte sized
-                        content educational app, to generate more users and motivating user to stay by utilizing fast content
-                        Utilized tools and frameworks such as flask, github, google gemini api to create a personalized
-                        recommendation for the courses offered based on data gather from what they mostly interact with on
-                        the platform.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="Skills">
+            <section class="Experience">
+                <h2>Experience</h2>
+                <!-- Experience content will go here -->
+            </section>
             
-            <h2>Skills</h2>
-            
-            <p>
-               <span> Programming Languages:</span> Python, Java, SQL, HTML, JavaScript, CSS
-               <span>Frameworks & Libraries:</span> Flask, JUnit 5
-               <span>Cloud & DevOps:</span> AWS (Lambda, API Gateway, Cognito, DynamoDB, S3, CloudFormation), Docker, CI/CD
-               <span>Tools & Platforms:</span> Git, Maven, cURL, CodeScene, Makefiles
-               <span>Testing:</span> Unit Testing, Stress Testing, Acceptance Testing
-               <span>Scripting:</span> Bash, Python
-               <span>Operating Systems:</span> Linux, Windows
-               <span>Databases:</span> SQLite, MySQL
-               <span>Other:</span> Brownfields Development, API Development, Robot Worlds Simulation, Web Development
-                                </p>
-        </section>
+            <section>
+                <h2>Projects</h2>
+                <div class="projects">
+                    <div class="project">   
+                        <h3>Care Compass</h3>
+                        <p>Developed a Python web application that acts as an information hub, raising awareness on where to
+                        locate essential services that can help people in need live a basic quality of life.
+                        Used tools and frameworks such as Flask, Firebase, and GitHub.</p>
+                    </div>
+                    <div class="project">
+                        <h3>ByteSize</h3>
+                        <p>Developed a Python web-based application to improve Telkom Learn App by creating bite-sized
+                        educational content to generate more users and motivate them to stay. Utilized tools and frameworks
+                        such as Flask, GitHub, and Google Gemini API to create personalized course recommendations based on user
+                        interaction data.</p>
+                    </div>
+                </div>
+            </section>
 
-        <section class="certificates">
-            <h2>Certificates</h2>
-            <div class="certificates">
-                <div class="certificate">
-                    <h3>SheCodes Basic</h3>
-                    <p>Description of certificate 1.</p>
+            <section class="Skills">
+                <h2>Skills</h2>
+                <p>
+                   <span>Programming Languages:</span> Python, Java, SQL, HTML, JavaScript, CSS
+                   <span>Frameworks & Libraries:</span> Flask, JUnit 5
+                   <span>Cloud & DevOps:</span> AWS (Lambda, API Gateway, Cognito, DynamoDB, S3, CloudFormation), Docker, CI/CD
+                   <span>Tools & Platforms:</span> Git, Maven, cURL, CodeScene, Makefiles
+                   <span>Testing:</span> Unit Testing, Stress Testing, Acceptance Testing
+                   <span>Scripting:</span> Bash, Python
+                   <span>Operating Systems:</span> Linux, Windows
+                   <span>Databases:</span> SQLite, MySQL
+                   <span>Other:</span> Brownfields Development, API Development, Robot Worlds Simulation, Web Development
+                </p>
+            </section>
+
+            <section>
+                <h2>Certificates</h2>
+                <div class="certificates">
+                    <div class="certificate">
+                        <h3>SheCodes Basic</h3>
+                        <p>Description of certificate 1.</p>
+                    </div>
                 </div>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="contact-info">
+            <h3>Contact Me</h3>
+            <p>Email: aphiwe.msabala127@gmail.com</p>
+          </div>
+          <div class="social-links">
+            <a href="https:www.linkedin.com/in/aphiwe-msabala" class="social-icon">LinkedIn</a>
+            <a href="https://github.com/AphiweMsabs" class="social-icon">GitHub</a>
+          </div>
+          <div class="copyright">
+            <p>© 2025 Aphiwe S. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
 </body>
 </html>

@@ -1,5 +1,5 @@
- /* General Styles */
- * {
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -45,6 +45,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+/* Logo Styles */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 40px; /* Adjust height to match your navbar height */
+    max-width: 150px; /* Limit logo width */
+    object-fit: contain; /* Maintain aspect ratio while fitting */
+    margin-right: 20px; /* Space between logo and navigation */
 }
 
 .navbar .nav-links {
@@ -153,7 +166,7 @@ header {
     .navbar .action_btn {
         display: none;
     }
-
+    
     .toggle_button {
         display: block;
     }
@@ -162,5 +175,18 @@ header {
     #toggle_checkbox:checked ~ .dropdown_menu {
         height: auto;
         padding: 1rem 0;
+    }
+    
+    /* Responsive logo */
+    .navbar .logo img {
+        height: 35px; /* Slightly smaller on medium screens */
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar .logo img {
+        height: 30px; /* Even smaller on mobile */
+        max-width: 120px;
     }
 }

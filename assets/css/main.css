@@ -25,6 +25,8 @@ body {
     justify-content: center;
     padding: 0;
     flex-wrap: wrap;
+    font-family: 'Poppins', Arial, sans-serif;
+
 }
 
 .hero_container > * {
@@ -122,8 +124,8 @@ body {
 }
 
 .name {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 52px;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 52px;
     font-weight: 700;
     margin: 10px 0;
     background: linear-gradient(45deg, #3a7bd5, #00d2ff);
@@ -144,11 +146,13 @@ body {
     animation: fadeUp 1.5s forwards;
     animation-delay: 6.5s;
     color: #333;
+    font-family: 'Poppins', Arial, sans-serif;
+
 }
 
 .occupation {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 36px;
     font-weight: 700;
     color: #ff69b4;
     margin: 15px 0;
