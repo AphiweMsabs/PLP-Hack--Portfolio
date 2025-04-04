@@ -42,7 +42,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    
+
     min-width: 300px;
 }
 
@@ -208,10 +208,9 @@ body {
     white-space: nowrap;
 }
 
-/* This CSS trick uses the fact that scrolling will change the :checked state */
 .scroll-detector {
     position: absolute;
-    top: 100vh; /* Position at the bottom of viewport */
+    top: 100vh;
     height: 1px;
     width: 1px;
     opacity: 0;
@@ -292,7 +291,7 @@ body {
     color: #333;
 }
 
-/* Media Queries for Responsive Design */
+/* Responsive Design */
 @media (max-width: 992px) {
     .hero_container {
         flex-direction: column;
@@ -411,7 +410,6 @@ p {
   color: #7f8c8d;
 }
 
-/* Hide radio inputs that control the slider */
 .slider-control {
   display: none;
 }
@@ -422,13 +420,11 @@ p {
   padding: 20px 0;
 }
 
-/* The visible window for the slider */
 .slider-window {
   width: 100%;
   overflow: hidden;
 }
 
-/* The actual scrollable content */
 .slider-wrapper {
   display: flex;
   transition: transform 0.5s ease;
@@ -519,7 +515,6 @@ p {
   transform: translateX(-1100px);
 }
 
-/* Advanced label targeting for prev/next functionality */
 /* Show appropriate prev/next controls based on current position */
 .prev-1, .next-1, 
 .prev-2, .next-2, 
@@ -563,7 +558,6 @@ p {
       width: 160px;
   }
   
-  /* Adjust transforms for smaller card width */
   #pos2:checked ~ .slider-container .slider-wrapper {
       transform: translateX(-180px);
   }
@@ -681,7 +675,6 @@ p {
   padding-top: 20px;
 }
 
-/* Add a subtle pattern to the footer */
 .footer::after {
   content: '';
   position: absolute;
