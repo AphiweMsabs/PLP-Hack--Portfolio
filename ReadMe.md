@@ -4,12 +4,6 @@ Welcome to the personal portfolio website of **Aphiwe S Msabala** — a showcase
 
 ---
 
-## 📸 Preview
-
-![Website Preview](assets/images/logo.jpg) <!-- Replace with an actual screenshot if available -->
-
----
-
 ## 🌐 Live Demo
 
 Watch the project in action, click the website link: 
