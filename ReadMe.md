@@ -14,7 +14,7 @@ Welcome to the personal portfolio website of **Aphiwe S Msabala** — a showcase
 
 Watch the project in action, click the website link: 
 
-- [Aphiwe S Msabala](https://www.netlify.com/)
+- [Aphiwe S Msabala](https://aphiwe-s-msabala.netlify.app/)
 
 
 ---
