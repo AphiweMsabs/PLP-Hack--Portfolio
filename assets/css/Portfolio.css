@@ -1,18 +1,7 @@
-:root {
-    --primary-color: #8a2be2; /* Purple */
-    --secondary-color: #6a0dad; /* Darker purple */
-    --accent-color: #9370db; /* Medium purple */
-    --gradient-start: #8a2be2;
-    --gradient-end: #4b0082; /* Indigo */
-    --text-color: #333;
-    --light-color: #f8f9fa;
-    --dark-color: #343a40;
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: var(--text-color);
+    color: #333;
     background: linear-gradient(135deg, #f5f0ff, #e6e0ff);
     margin: 0;
     padding: 0;
@@ -28,7 +17,7 @@ main {
     text-align: center;
     padding: 60px 0 30px;
     position: relative;
-    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    background: linear-gradient(135deg, #8a2be2, #4b0082);
     color: white;
     border-radius: 10px;
     margin-bottom: 40px;
@@ -78,9 +67,92 @@ section {
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
 }
 
+/* Updated experiences section for one-line layout with bigger boxes */
+.experiences {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 20px;
+    margin-top: 20px;
+    padding-bottom: 15px; /* Add padding for scrollbar */
+    scroll-behavior: smooth;
+}
+
+.experience {
+    background: linear-gradient(145deg, #ffffff, #f5f0ff);
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    border-left: 4px solid #9370db;
+    box-shadow: 0 3px 10px rgba(138, 43, 226, 0.1);
+    min-width: 250px; /* Reduced minimum width */
+    max-width: 300px; /* Added maximum width */
+    height: 200px; /* Fixed height for bigger appearance */
+    flex: 0 0 auto; /* Prevent shrinking */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+}
+
+.experience:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(138, 43, 226, 0.2);
+}
+
+/* Custom scrollbar for experience cards vertical scrolling */
+.experience::-webkit-scrollbar {
+    width: 6px;
+}
+
+.experience::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.experience::-webkit-scrollbar-thumb {
+    background: #9370db;
+    border-radius: 10px;
+}
+
+/* Add scrollbar styling for better appearance */
+.experiences::-webkit-scrollbar {
+    height: 8px;
+}
+
+.experiences::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.experiences::-webkit-scrollbar-thumb {
+    background: #9370db;
+    border-radius: 10px;
+}
+
+.experiences::-webkit-scrollbar-thumb:hover {
+    background: #8a2be2;
+}
+
+.experience h3 {
+    color: #8a2be2;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2rem; /* Slightly reduced font size */
+}
+
+.experience p {
+    margin: 8px 0;
+    font-size: 0.95rem; /* Slightly reduced font size */
+}
+
+.experience p:first-of-type {
+    font-size: 0.85rem;
+    color: #666;
+}
+
 h2 {
-    color: var(--primary-color);
-    border-bottom: 2px solid var(--accent-color);
+    color: #8a2be2;
+    border-bottom: 2px solid #9370db;
     padding-bottom: 10px;
     margin-top: 0;
 }
@@ -97,7 +169,7 @@ h2 {
     border-radius: 8px;
     padding: 20px;
     transition: transform 0.3s ease;
-    border-left: 4px solid var(--accent-color);
+    border-left: 4px solid #9370db;
     box-shadow: 0 3px 10px rgba(138, 43, 226, 0.1);
 }
 
@@ -106,8 +178,8 @@ h2 {
     box-shadow: 0 8px 20px rgba(138, 43, 226, 0.2);
 }
 
-.project h3, .certificate h3 {
-    color: var(--primary-color);
+.project h3 a , .certificate h3 {
+    color: #8a2be2;
     margin-top: 0;
 }
 
@@ -117,12 +189,10 @@ h2 {
 
 .Skills span {
     font-weight: bold;
-    color: var(--primary-color);
+    color: #8a2be2;
     display: block;
     margin-top: 10px;
 }
-
-
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -132,5 +202,14 @@ h2 {
     
     section {
         padding: 15px;
+    }
+    
+    .experiences {
+        padding-bottom: 10px;
+    }
+    
+    .experience {
+        min-width: 220px;
+        height: 180px;
     }
 }

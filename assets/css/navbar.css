@@ -8,7 +8,7 @@
 
 body {
     background-color: #f0f0f0;
-    padding-top: 70px; /* Add space for fixed navbar */
+    padding-top: 5rem; 
 }
 
 li {
@@ -19,7 +19,7 @@ a {
     text-decoration: none;
     color: black;
     font-size: 1rem;
-    white-space: nowrap; /* Prevent text wrapping */
+    white-space: nowrap; 
 }
 
 a:hover {
@@ -54,10 +54,10 @@ header {
 }
 
 .navbar .logo img {
-    height: 40px; /* Adjust height to match your navbar height */
-    max-width: 150px; /* Limit logo width */
-    object-fit: contain; /* Maintain aspect ratio while fitting */
-    margin-right: 20px; /* Space between logo and navigation */
+    height: 40px; 
+    max-width: 150px; 
+    object-fit: contain; 
+    margin-right: 20px; 
 }
 
 .navbar .nav-links {
@@ -76,7 +76,7 @@ header {
     cursor: pointer;
     transition: transform 0.2s ease;
     display: inline-block;
-    white-space: nowrap; /* Prevent text wrapping */
+    white-space: nowrap; 
 }
 
 .action_btn:hover {
@@ -88,7 +88,6 @@ header {
     transform: scale(0.95);
 }
 
-/* Checkbox and label setup */
 #toggle_checkbox {
     display: none;
 }
@@ -101,7 +100,7 @@ header {
     color: black;
 }
 
-/* Dropdown Menu */
+
 .dropdown_menu {
     position: absolute;
     left: 0;
@@ -127,7 +126,6 @@ header {
     width: 100%;
 }
 
-/* Fixed action button in dropdown */
 .dropdown li:last-child {
     padding: 1rem 0;
     width: 100%;
@@ -154,7 +152,6 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Ensure text doesn't break in dropdown items */
 .dropdown li a {
     white-space: nowrap;
     display: inline-block;
@@ -171,7 +168,6 @@ header {
         display: block;
     }
     
-    /* Show dropdown when checkbox is checked */
     #toggle_checkbox:checked ~ .dropdown_menu {
         height: auto;
         padding: 1rem 0;
@@ -179,14 +175,14 @@ header {
     
     /* Responsive logo */
     .navbar .logo img {
-        height: 35px; /* Slightly smaller on medium screens */
+        height: 35px;
         margin-right: 10px;
     }
 }
 
 @media (max-width: 576px) {
     .navbar .logo img {
-        height: 30px; /* Even smaller on mobile */
+        height: 30px; 
         max-width: 120px;
     }
 }
